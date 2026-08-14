@@ -235,7 +235,7 @@ function nextQuestion() {
 
 // COUNTER
 function counter() {
-    let timerCounter = 7;
+    let timerCounter = 15;
     timeUpMessage.classList.add("hidden")
     timerBadge.classList.remove("warning")
     timerValue.innerHTML = timerCounter;
@@ -243,7 +243,7 @@ function counter() {
     time = setInterval(function () {
         timerValue.innerHTML = Number(timerValue.innerHTML) - 1;
 
-        if (timerValue.innerHTML < 5) {
+        if (timerValue.innerHTML < 6) {
             timerBadge.classList.add("warning")
             playSound(sounds.countdown);
         };

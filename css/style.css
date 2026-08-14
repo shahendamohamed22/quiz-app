@@ -523,7 +523,6 @@ body::after {
   align-items: center;
   justify-content: center;
   padding: 60px;
-  z-index: 100;
 }
 
 .loading-spinner {
@@ -577,7 +576,6 @@ body::after {
   padding: 30px;
   animation: cardEnter 0.5s ease;
   margin: 0 auto;
-  z-index: 1000;
 }
 
 @keyframes cardEnter {
