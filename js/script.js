@@ -99,9 +99,8 @@ for (const btn of btnNum) {
 };
 // TYPING THE NUMBER
 questionsNumber.addEventListener("input", function () {
-    errorValidation.classList.add("hidden");
-    if (questionsNumber.value >= questionsNumber.min && questionsNumber.value <= questionsNumber.max) {
-        amount = questionsNumber.value
+    if (Number(questionsNumber.value) >= Number(questionsNumber.min) && Number(questionsNumber.value) <= Number(questionsNumber.max)) {
+        amount = questionsNumber.value;
     };
 });
 
@@ -433,7 +432,7 @@ function validation() {
         }, 3000)
         return false;
     }
-    else if (amount < questionsNumber.min) {
+    else if (Number(amount) < Number(questionsNumber.min)) {
         errorValidation.classList.remove("hidden");
         errorValidationMessage.innerHTML = "Minimum 1 question required."
         setTimeout(function () {
@@ -441,7 +440,7 @@ function validation() {
         }, 3000)
         return false;
     }
-    else if (amount > questionsNumber.max) {
+    else if (Number(amount) > Number(questionsNumber.max)) {
         errorValidation.classList.remove("hidden");
         errorValidationMessage.innerHTML = "Miximum 50 questions required."
         setTimeout(function () {

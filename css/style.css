@@ -569,13 +569,11 @@ body::after {
 
 /* ======> Question Card */
 .question-card {
-  
   width: 700px;
   max-width: 95vw;
   min-height: 500px;
   padding: 30px;
   animation: cardEnter 0.5s ease;
-  margin: 0 auto;
 }
 
 @keyframes cardEnter {
